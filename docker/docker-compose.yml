@@ -1,5 +1,5 @@
 services:
-  fast-vision:
+  checker-vision:
     build:
       context: ..
       dockerfile: docker/Dockerfile

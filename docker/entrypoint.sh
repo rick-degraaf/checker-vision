@@ -21,7 +21,7 @@ fi
 # Create a Python 3.11 virtual environment if one does not exist
 if [ ! -d ".venv" ]; then
     echo "Creating virtual environment with Python 3.11..."
-    uv venv --python 3.11
+    uv venv checker-vision --python 3.11
 else
     echo "Virtual environment already exists."
 fi

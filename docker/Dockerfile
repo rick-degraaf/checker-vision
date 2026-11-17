@@ -38,12 +38,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libegl1 \
     libosmesa6-dev \
     python3-tk \
+    libxcb-xinerama0 \
+    libxcb-cursor0 \
+    libxcb-icccm4 \
+    libxcb-image0 \
+    libxcb-keysyms1 \
+    libxcb-randr0 \
+    libxcb-render-util0 \
+    libxcb-shape0 \
+    libxkbcommon-x11-0 \
+    libdbus-1-3 \
     # Python Environment
     python3.11 \
     python3.11-dev \
     python3.11-venv \
     && rm -rf /var/lib/apt/lists/*
-
+    
 # 2. Set Python defaults and install uv
 RUN ln -sf /usr/bin/python3.11 /usr/bin/python \
     && ln -sf /usr/bin/python3.11 /usr/bin/python3 \

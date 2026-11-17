@@ -1,7 +1,7 @@
 {
-  "name": "fast-vision",
+  "name": "checker-vision",
   "dockerComposeFile": "../docker/docker-compose.yml",
-  "service": "fast-vision",
+  "service": "checker-vision",
   "workspaceFolder": "/app",
 
   "customizations": {
